@@ -9,9 +9,9 @@ Confusion Matrix
 
             Predicted 0	    Predicted 1
             
-Actual 0	18663	        102
+Actual 0	            18663	                    102
 
-Actual 1	   56	        563
+Actual 1	               56	                    563
 
 Accuracy Score : 0.99
 
