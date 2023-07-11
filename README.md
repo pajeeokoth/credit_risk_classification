@@ -7,11 +7,9 @@
 
 Confusion Matrix
 
-            Predicted 0	    Predicted 1
-            
-Actual 0	            18663	                    102
-
-Actual 1	               56	                    563
+                                    Predicted 0	    Predicted 1
+            Actual 0	            18663	    102
+            Actual 1	               56	    563
 
 Accuracy Score : 0.99
 
@@ -25,19 +23,17 @@ Classification Report
            1       0.85      0.91      0.88       619
 
     accuracy                           0.99     19384
-   macro avg       0.92      0.95      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
+    macro avg       0.92      0.95      0.94     19384
+    weighted avg       0.99      0.99      0.99     19384
 
 -   Precision suggest that model is performing well, the accuracy and balnced accuracy scores both suggest model is performing well. Since there is class imabalnce, the results could be suspect. We need to balance the classes for the results to be trustable.
 
 -   Using random over sampling method to balnce the classes, here are the results:
 Confusion Matrix
 
-            Predicted 0	    Predicted 1
-    
-Actual 0	18649	        116
-
-Actual 1	    4	        615
+                        Predicted 0	    Predicted 1
+        Actual 0	18649	        116
+        Actual 1	    4	        615
 
 Balanced Accuracy Score: 0.99
 
@@ -49,7 +45,10 @@ Classification Report
            1       0.84      0.99      0.91       619
 
     accuracy                           0.99     19384
-   macro avg       0.92      0.99      0.95     19384
-weighted avg       0.99      0.99      0.99     19384
+    macro avg       0.92      0.99      0.95     19384
+    weighted avg       0.99      0.99      0.99     19384
 
--   With over sampling to balance the classes, the balanced accuracy score improve from 0.95 to 0.99 we see an improvement in accuracy and recall for both classes, however the precision for high-risk loan did not improve.
+-   With over sampling to balance the classes, the balanced accuracy score improve from 0.95 to 0.99.
+-   The recall improved for high-risk loan from 0.95 to 0.99 meaning that of all the high-risk loans, the model was able to correctly predict 99% as being high-risk.
+-   The precison for healthy loan is 0.99 and that for high-risk is 0.84, this means that of the high-risk loan predicted as high-risk, about 84% were actually high-risk.
+-   The model seems to be working well based on recall for both classes, precision is good for the healthy class and relatively good for the high-risk class. Generally the model seems to working well and can be used to predict high-risk loan.
