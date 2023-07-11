@@ -6,14 +6,19 @@
 -   Results form the logistic model:
 
 Confusion Matrix
+
             Predicted 0	    Predicted 1
+            
 Actual 0	18663	        102
+
 Actual 1	   56	        563
 
 Accuracy Score : 0.99
+
 Balanced Accuracy Score: 0.95
 
 Classification Report
+
               precision    recall  f1-score   support
 
            0       1.00      0.99      1.00     18765
@@ -27,13 +32,17 @@ weighted avg       0.99      0.99      0.99     19384
 
 -   Using random over sampling method to balnce the classes, here are the results:
 Confusion Matrix
+
             Predicted 0	    Predicted 1
+    
 Actual 0	18649	        116
+
 Actual 1	    4	        615
 
 Balanced Accuracy Score: 0.99
 
 Classification Report
+
               precision    recall  f1-score   support
 
            0       1.00      0.99      1.00     18765
